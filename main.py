@@ -198,25 +198,24 @@ while(f != 1):
     print(B["name"],",","a",B["description"],",","from",B["country"])
 
     check = input("Who has more followers? Type 'A' or 'B': ").lower()
+    print("\n")
     if(check == "a"):
         if(A["follower_count"] > B["follower_count"]):
             count = count + 1
-            print(f"You are right! Current score: {count}")
         else:
-            print("You lose")
             f = 1
 
     if(check == "b"):
         if(A["follower_count"] < B["follower_count"]):
             count = count + 1
-            print(f"You are right! Current score: {count}")
         else:
-            print("You lose")
             f = 1
     if(f == 1):
-        print("The end")
+        print("YOU LOST. THE END!")
+        print(f"THE FINAL SCORE WAS : {count}")
     else:
         print("\n" * 50)
+        print(f"You are right! Current score: {count}")
 
 
 
