@@ -1,11 +1,11 @@
-from data import data
+from data import data   # importing data from data file
 import random
 
 f = None
 count = 0
 while(f != 1):
     A = random.choice(data)
-    B = random.choice(data)
+    B = random.choice(data) 
     if(B == A):
         B = random.choice(data)
 
